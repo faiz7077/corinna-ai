@@ -56,6 +56,17 @@ const PortalSteps = ({
   amount,
   stripeId,
 }: Props) => {
+//   if (questions.find((question)=>!question.answered)){
+//     return(
+//       <QuestionsForm  
+//         register={register}
+//         error={error}
+//         onNext={onNext}
+//         questions={questions}
+//       />
+//     )
+//   }
+// }
   if (step == 1) {
     return (
       <QuestionsForm

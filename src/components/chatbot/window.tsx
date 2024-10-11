@@ -72,7 +72,7 @@ export const BotWindow = forwardRef<HTMLDivElement, Props>(
   ) => {
     console.log(errors)
     return (
-      <div className="h-[670px] w-[450px] flex flex-col bg-white rounded-xl mr-[80px] border-[1px] overflow-hidden">
+      <div className="h-[500px] w-[350px] flex flex-col bg-white rounded-xl mr-[80px] border-[1px] overflow-x-hidden">
         <div className="flex justify-between px-4 pt-4">
           <div className="flex gap-2">
             <Avatar className="w-20 h-20">
@@ -84,7 +84,7 @@ export const BotWindow = forwardRef<HTMLDivElement, Props>(
             </Avatar>
             <div className="flex items-start flex-col">
               <h3 className="text-lg font-bold leading-none">
-                Sales Rep - Web Prodigies
+                Sales Rep - Study Notion
               </h3>
               <p className="text-sm">{domainName.split('.com')[0]}</p>
               {realtimeMode?.mode && (
@@ -116,7 +116,7 @@ export const BotWindow = forwardRef<HTMLDivElement, Props>(
                   background: theme || '',
                   color: textColor || '',
                 }}
-                className="px-3 flex h-[400px] flex-col py-5 gap-3 chat-window overflow-y-auto"
+                className="px-3 flex h-[250px] flex-col py-5 gap-3 chat-window overflow-y-auto"
                 ref={ref}
               >
                 {chats.map((chat, key) => (
@@ -158,7 +158,7 @@ export const BotWindow = forwardRef<HTMLDivElement, Props>(
           </TabsContent>
 
           <TabsContent value="helpdesk">
-            <div className="h-[485px] overflow-y-auto overflow-x-hidden p-4 flex flex-col gap-4">
+            <div className="h-[345px] overflow-y-auto overflow-x-hidden p-4 flex flex-col gap-4">
               <div>
                 <CardTitle>Help Desk</CardTitle>
                 <CardDescription>
@@ -178,7 +178,7 @@ export const BotWindow = forwardRef<HTMLDivElement, Props>(
           </TabsContent>
         </TabsMenu>
         <div className="flex justify-center ">
-          <p className="text-gray-400 text-xs">Powered By Web Prodigies</p>
+          <p className="text-gray-400 text-xs">Powered By TeamIPS</p>
         </div>
       </div>
     )
