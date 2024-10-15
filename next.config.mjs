@@ -9,7 +9,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'wordpress-1269066-4577871.cloudwaysapps.com',
+        hostname: 'wordpress-1347159-4947262.cloudwaysapps.com',
       },
     ],
   },
